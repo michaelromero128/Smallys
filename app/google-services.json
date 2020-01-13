@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "966343601465",
+    "firebase_url": "https://smallys.firebaseio.com",
+    "project_id": "smallys",
+    "storage_bucket": "smallys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966343601465:android:d23603657a2e441b",
+        "android_client_info": {
+          "package_name": "cornez.com.smallys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966343601465-otuf7v91pljn5s7ijoia2ev9qca43he0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Qg88A8mTU2tB-A19yHFeapBF59YrOH0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

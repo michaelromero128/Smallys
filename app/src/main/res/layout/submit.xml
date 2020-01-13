@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/ckStuffed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="96dp"
+        android:text="Stuffed Crust"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ckPep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pepperoni"
+        app:layout_constraintStart_toStartOf="@+id/ckStuffed"
+        app:layout_constraintTop_toBottomOf="@+id/ckStuffed" />
+
+    <CheckBox
+        android:id="@+id/ckPine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pineapple"
+        app:layout_constraintStart_toStartOf="@+id/ckPep"
+        app:layout_constraintTop_toBottomOf="@+id/ckPep" />
+
+    <CheckBox
+        android:id="@+id/ckHam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ham"
+        app:layout_constraintStart_toStartOf="@+id/ckPine"
+        app:layout_constraintTop_toBottomOf="@+id/ckPine" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="92dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Small" />
+
+        <RadioButton
+            android:id="@+id/radioMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radioLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Large" />
+
+        <RadioButton
+            android:id="@+id/radioXL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Extra Large" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitOrderButton"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:entries="@array/count"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="267dp"
+        android:text="How Many Pizzas?"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckPine" />
+
+
+</android.support.constraint.ConstraintLayout>

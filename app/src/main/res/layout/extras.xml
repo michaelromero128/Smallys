@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        android:text="Crazy Bread"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCB"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCB"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCB" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Wings"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerWings"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerWings"
+        app:layout_constraintStart_toStartOf="@+id/spinnerWings" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="18dp"
+        android:text="2 Liters of Soda"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSoda"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSoda" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="Brownies"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBrownies"
+        app:layout_constraintStart_toStartOf="@+id/spinnerBrownies" />
+
+    <Spinner
+        android:id="@+id/spinnerCB"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="80dp"
+        android:entries="@array/zeroCount"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerWings"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="39dp"
+        android:entries="@array/zeroCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCB"
+        app:layout_constraintTop_toTopOf="@+id/spinnerCB" />
+
+    <Spinner
+        android:id="@+id/spinnerSoda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="73dp"
+        android:entries="@array/zeroCount"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerBrownies"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerBrownies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerBrownies" />
+
+    <Spinner
+        android:id="@+id/spinnerBrownies"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="245dp"
+        android:entries="@array/zeroCount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerSoda"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/extrasSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="54dp"
+        android:text="Add Items to Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
